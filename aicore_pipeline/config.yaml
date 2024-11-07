@@ -1,0 +1,12 @@
+apiVersion: argoproj.io/v1alpha1
+kind: WorkflowTemplate
+metadata:
+  name: llama-factory-aicore-test # executable id, must be unique across all your workflows (YAML files), please modify this to any value (e.g. code-pipeline-12345) if you are not the only user of your SAP AI Core instance.
+  annotations:
+    scenarios.ai.sap.com/description: "LLaMa Factory application"
+    scenarios.ai.sap.com/name: "LLaMa Factory"
+    executables.ai.sap.com/description: "LLaMa Factory application"
+    executables.ai.sap.com/name: "LLaMa Factory applicaiton"
+  labels:
+    scenarios.ai.sap.com/id: "llama-factory-run-test"
+    ai.sap.com/version: "1.0"
